@@ -235,3 +235,76 @@ border: 太さ スタイル 色;
 |margin: left;|[左] の内側の余白を1pxに指定|
 |margin: right;|[右] の内側の余白を1pxに指定|
 |margin: auto;|余白を自動で算出|
+
+##【positionプロパティ】
+
+positionプロパティとは指定した**「要素の配置方法」**を決めることができるプロパティ。
+配置方法としては以下のような方法があります。
+
+| 組み合わせ| 説明     | 
+| :---       | :--   |  
+| position: relative;| 現在の位置を基準に相対的な位置を決める|
+| position: absolute;| 特定の地点を基準に絶対的な位置を決める|
+| position: fixed;| 要素を指定した位置に固定する|
+
+##【top/right/bottom/leftトプロパティ】
+positionプロパティを指定した要素に、基準（上、下、右、左）の距離を指定することができます。
+
+記述の下に基準（上、下、右、左）の距離を指定します。
+
+
+###position: absolute;
+
+```css
+message{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+```
+
+**position: absolute;** は他の要素の配置を無視し、左上に配置されます。topプロパティとleftプロパティにそれぞれ40pxを指定しているため、その分余白が残ります。
+
+このように、**「絶対位置」** では、HTMLの構造を無視した要素配置がされます。
+
+###position: relative;
+
+```css
+card{
+  position: relative;
+}
+```
+
+親要素に**「position: relative;」**を設定すると、子要素の基準は親要素の左上となり、**「相対位置」**をとります。
+
+つまり、親要素に**「position: relative;」**を設定し、
+子要素に**「position: absolute;」**を記述することで、
+
+子要素は親要素の範囲を基準に移動することになります。
+
+##【リセットCSS】
+リセットCSSとは、各ブラウザに**「デフォルトで設定されているCSSを打ち消す役割」**をもったCSS。
+
+#【viewport】
+viewportとは**「ブラウザで表示されている領域」**を表します。
+例えば、PCのブラウザなどでは、ブラウザウインドウの表示領域が**viewport**になります。
+
+##【vh】
+vh（viewport height）は、viewportの**「高さ（height）に対する割合」**のことを指します。**1vh** と指定した場合は、ブラウザで表示されている高さの **1%** です。
+
+```css
+/* ブラウザで表示されている高さが、1000pxの場合 */
+.hoge {
+  height: 10vh; => 100px　　                 (1vh　= 1%)
+}
+```
+
+##【vw】
+vw（viewport width）は、viewportの**「幅（width）に対する割合」**のことを指します。**1vw**と指定した場合は、ブラウザで表示されている幅の**1%**です。
+
+```css
+/* ブラウザで表示されている高さが、800pxの場合 */
+.hoge {
+  width: 10vh; => 80px　　                 (1vw　= 1%)
+}
+```
