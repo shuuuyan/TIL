@@ -308,3 +308,28 @@ vw（viewport width）は、viewportの**「幅（width）に対する割合」*
   width: 10vh; => 80px　　                 (1vw　= 1%)
 }
 ```
+
+【カーソルに乗せた時に色を変える】
+
+```css
+セレクタ:hover {
+}
+```
+
+【ボタンを角丸にする】
+
+```css
+box {
+  border-radius: 10px;
+}
+
+【テキストを中央に寄せる】
+
+```css
+text {
+  text-align: center;
+}
+
+要素を中央寄せにする方法として、「margin: 0 auto」 と 「text-align: center」を学んだが、それらの違いを整理。
+containerクラスのように、広い範囲を囲うようなブロック要素の場合は「margin」を、テキストやボタンのようなインライン要素・インラインブロック要素の場合は「text-align」を使う。
+```
