@@ -333,3 +333,7 @@ text {
 要素を中央寄せにする方法として、「margin: 0 auto」 と 「text-align: center」を学んだが、それらの違いを整理。
 containerクラスのように、広い範囲を囲うようなブロック要素の場合は「margin」を、テキストやボタンのようなインライン要素・インラインブロック要素の場合は「text-align」を使う。
 ```
+
+【Font　Awesome】
+アイコンがたくさん使用できるアプリ。<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
