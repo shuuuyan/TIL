@@ -337,3 +337,8 @@ containerクラスのように、広い範囲を囲うようなブロック要�
 【Font　Awesome】
 アイコンがたくさん使用できるアプリ。<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+【要素の中身全てを透明にする】
+opacity
+
+【背景色のみを透明にする】
+rgba
