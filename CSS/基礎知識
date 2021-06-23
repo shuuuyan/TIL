@@ -423,4 +423,17 @@ HTML中級編で制作したサイトは、要素の幅を1170pxに固定して�
 「max-width: ◯◯px（またはmin-width: ◯◯px）」のようにメディアクエリの条件を指定するとき、「◯◯px」の部分を「ブレイクポイント」と呼びます。
 今回はスマートフォンの画面幅は「670px」以下、タブレットの画面幅は「670px ~ 1000px」と想定して、ブレイクポイントを設定する。
 
+【box-sizing: border-box;】
+box-sizingをborder-boxに指定すると、要素の幅(width)の合計にpaddingとborderが含まれるようになります。
+そのため、paddingやborderを追加した時に生じるレイアウト崩れを未然に防ぐことができます
+（※ただし、marginはborder-boxでの合計値に含まれません）。
+
+box-sizing: border-box;を指定するときは、*(アスタリスク)に対して指定することが推奨されています。
+*はすべての要素に対してCSSを適用したい場合に用います。
+border-boxをすべての要素に対して適用することで、レイアウトを管理しやすくなります。
+
+/* HTML全体にbox-sizing: border-box;　を適用 */
+＊{
+　　　box-sizing: border-box;
+}
 
