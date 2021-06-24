@@ -437,3 +437,15 @@ border-boxをすべての要素に対して適用することで、レイアウ�
 　　　box-sizing: border-box;
 }
 
+レスポンシブデザインを適用する準備として、<head>タグ内にviewportを設定しましょう。
+viewportを設定しないと、スマートフォンやタブレットでの閲覧時にメディアクエリが正しく機能しません。
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+stylesheet.cssにメディアクエリ用のCSSを記述しても問題ありませんが、整理しやすいように今回はCSSファイルを分割し、responsive.cssにメディアクエリ用のCSSを記述していきます。
+このresponsive.cssを読み込む際には、必ずviewportよりも下の行に記述するようにしましょう。
+
+子要素が全てfloatでも、親要素が高さを持つように設定。
+floatは「clear: left;」で「浮いている」状態を解除できます。
+ここでは「clear: left;」を適用するためだけの空のタグを用意しましょう。
+空タグとclearでfloatを解除するのはよく使うテクニックなので、覚えておくようにしましょう。
