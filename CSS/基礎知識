@@ -449,3 +449,11 @@ stylesheet.cssにメディアクエリ用のCSSを記述しても問題ありま
 floatは「clear: left;」で「浮いている」状態を解除できます。
 ここでは「clear: left;」を適用するためだけの空のタグを用意しましょう。
 空タグとclearでfloatを解除するのはよく使うテクニックなので、覚えておくようにしましょう。
+
+<div class="lessons">
+  <div class="clear"></div>　　　#空タグを作成
+</div>
+
+.clear{
+  clear: left　　　　　　#float を解除
+}
