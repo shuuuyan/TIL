@@ -484,6 +484,6 @@ display: flex;
 「background-image: url(画像のURL);」
 background-image: url(https://prog-8.com/images/html/advanced/top.png);
 
-「background-size: cover;」　　　→  画面のサイズに画像を合わせる
-background-image: url(https://prog-8.com/images/html/advanced/top.png);
-background-image: url(https://prog-8.com/images/html/advanced/top.png);
+「background-size: cover;」　　　→  画面のサイズに画像を合わせる。
+
+
