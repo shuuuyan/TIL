@@ -479,3 +479,11 @@ display: flex;
 
 【子要素を上から下へ並べる】
 「flex-direction: column」は子要素を上から下へ並べます。
+
+【背景画像を設定】
+「background-image: url(画像のURL);」
+background-image: url(https://prog-8.com/images/html/advanced/top.png);
+
+「background-size: cover;」　　　→  画面のサイズに画像を合わせる
+background-image: url(https://prog-8.com/images/html/advanced/top.png);
+background-image: url(https://prog-8.com/images/html/advanced/top.png);
