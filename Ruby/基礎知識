@@ -108,8 +108,4 @@ puts "#{name}さん、#{minutes}分は#{seconds}秒です!"
  # 以下はどちらも同じ要素
 hash = { :name => "Taro" }
 hash = { name: "Taro" } # よく使用される。
-
-ride_count = 0 
-friends = []
-
  
