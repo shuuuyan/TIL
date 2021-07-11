@@ -263,3 +263,4 @@ class クラス名
  end
 end
 インスタンス = クラス名.new   # initializeメソッドが呼ばれ文字が表示される
+
